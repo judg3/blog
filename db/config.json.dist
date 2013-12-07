@@ -1,0 +1,14 @@
+{
+  "development": {
+    "driver": "postgres",
+    "source": "postgres://dbname:password@localhost/test?sslmode=disable"
+  },
+  "production": {
+    "driver": "postgres",
+    "source": "postgres://dbname:password@localhost/test?sslmode=disable"
+  },
+  "test": {
+    "driver": "postgres",
+    "source": "postgres://dbname:password@localhost/test?sslmode=disable"
+  }
+}

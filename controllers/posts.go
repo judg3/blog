@@ -1,11 +1,12 @@
 package controllers
 
 import (
-	"blog/forms"
-	"blog/models"
-	"blog/services"
 	"github.com/codegangsta/martini"
+	"github.com/codegangsta/martini-contrib/binding"
 	"github.com/codegangsta/martini-contrib/render"
+	"github.com/judg3/blog/forms"
+	"github.com/judg3/blog/models"
+	"github.com/judg3/blog/services"
 )
 
 func GetPost(params martini.Params, r render.Render) {
@@ -26,7 +27,7 @@ func ListPosts(params martini.Params, r render.Render) {
 	r.JSON(200, results)
 }
 
-func CreatePost(post forms.Post, params martini.Params, r render.Render) {
+func CreatePost(post forms.Post, params martini.Params, formErr binding.Errors, r render.Render) {
 
 	hd := services.GetDb()
 	tx := hd.Begin()

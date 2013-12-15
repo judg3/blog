@@ -4,7 +4,6 @@ import (
 	"github.com/codegangsta/martini"
 	"github.com/codegangsta/martini-contrib/binding"
 	"github.com/codegangsta/martini-contrib/render"
-	"github.com/codegangsta/martini-contrib/sessions"
 	"github.com/judg3/blog/controllers"
 	"github.com/judg3/blog/forms"
 )

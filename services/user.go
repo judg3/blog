@@ -15,5 +15,3 @@ func (a Auth) Login(user string, password string) bool {
 
 	return false
 }
-
-func (u Auth) 
